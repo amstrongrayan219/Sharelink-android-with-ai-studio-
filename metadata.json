@@ -1,0 +1,6 @@
+{
+  "name": "ShareLink",
+  "description": "Partagez des fichiers en Wi-Fi local de manière instantanée entre votre téléphone Android et votre PC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
