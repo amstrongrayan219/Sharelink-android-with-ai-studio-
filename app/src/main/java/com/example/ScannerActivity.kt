@@ -315,7 +315,7 @@ fun ScannerOverlay() {
         drawLine(cyanColor, Offset(right + strokeW / 2, bottom), Offset(right - cornerLen, bottom), strokeW)
         drawLine(cyanColor, Offset(right, bottom + strokeW / 2), Offset(right, bottom - cornerLen), strokeW)
 
-        // Pulsating glowing red/blue scanning sweep laser line
+        // Pulsating glowing scanning sweep QR line
         val scanY = top + (bottom - top) * sweepPosition
         drawLine(
             cyanColor,

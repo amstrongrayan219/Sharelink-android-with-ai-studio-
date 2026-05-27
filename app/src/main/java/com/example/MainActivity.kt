@@ -168,7 +168,7 @@ fun MainDashboardScreen(
         ) {
             Spacer(modifier = Modifier.height(24.dp))
 
-            // Main radar/glowing pulse circle with centered scan button
+            // Main Wi-Fi connectivity nodes / glowing pulse circle with centered scan button
             Box(
                 modifier = Modifier
                     .size(220.dp),
