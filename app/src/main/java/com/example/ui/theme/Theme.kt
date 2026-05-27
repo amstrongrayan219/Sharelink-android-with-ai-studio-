@@ -6,24 +6,25 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val DarkColorScheme = darkColorScheme(
-    primary = SatDarkPrimary,
-    secondary = SatDarkSecondary,
-    tertiary = SatDarkTertiary,
-    background = SatDarkBackground,
-    surface = SatDarkSurface,
-    onBackground = SatDarkOnSurface,
-    onSurface = SatDarkOnSurface,
-    primaryContainer = SatDarkSurface,
+    primary = ShareLinkPrimary,
+    secondary = ShareLinkSecondary,
+    tertiary = ShareLinkTertiary,
+    background = ShareLinkBackground,
+    surface = ShareLinkSurface,
+    onBackground = ShareLinkOnBackground,
+    onSurface = ShareLinkOnSurface,
+    primaryContainer = ShareLinkSurface,
     onPrimaryContainer = Color.White,
-    surfaceVariant = Color(0xFF1E2638),
-    onSurfaceVariant = Color(0xFF94A3B8)
+    surfaceVariant = ShareLinkSurfaceVariant,
+    onSurfaceVariant = ShareLinkOnSurfaceVariant,
+    error = ShareLinkError
 )
 
 @Composable
 fun MyApplicationTheme(
     content: @Composable () -> Unit,
 ) {
-    // Force Dark Mode to ensure a professional aerospace radar alignment aesthetic
+    // Elegant system dark mode designed specifically for local Wi-Fi secure sharing
     MaterialTheme(
         colorScheme = DarkColorScheme,
         typography = Typography,
