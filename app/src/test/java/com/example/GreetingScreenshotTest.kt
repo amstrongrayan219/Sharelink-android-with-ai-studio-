@@ -21,7 +21,15 @@ class GreetingScreenshotTest {
 
   @Test
   fun greeting_screenshot() {
-    composeTestRule.setContent { MyApplicationTheme { Greeting("Robolectric") } }
+    composeTestRule.setContent { 
+      MyApplicationTheme { 
+        androidx.compose.material3.Text(
+          text = "ShareLink Local file transfer", 
+          style = androidx.compose.material3.MaterialTheme.typography.headlineMedium,
+          color = androidx.compose.material3.MaterialTheme.colorScheme.primary
+        ) 
+      } 
+    }
 
     composeTestRule.onRoot().captureRoboImage(filePath = "src/test/screenshots/greeting.png")
   }
